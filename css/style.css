@@ -1,0 +1,225 @@
+:root {
+  --green: #00712d;
+  --main: #d5ed9f;
+  --white: #fffbe6;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--main);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+main > h1:first-child {
+  font-weight: normal;
+  margin: 0.8em 0;
+}
+
+.container {
+  max-width: 450px;
+  margin: 1.5em 0;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 #b9b8ad;
+  padding: 1em 0.5em;
+}
+
+.container > form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container > form > label {
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+#search-input {
+  margin-right: 0.5em;
+  padding: 0 0.5em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+#search-input:focus {
+  outline: 3px solid var(--main);
+}
+
+#search-button {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  background-color: var(--green);
+  color: var(--white);
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#search-button:hover {
+  color: var(--black);
+  background-color: var(--main);
+}
+
+.output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.top-output {
+  width: 100%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container > img {
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.name-and-id {
+  margin-bottom: 0.3em;
+}
+
+.name-and-id > span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#types > span {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-right: 0.3em;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.poison {
+  background-color: #9e5694;
+}
+
+.fairy {
+  background-color: #f7bdc9;
+}
+
+.normal {
+  background-color: #b4b5a7;
+}
+
+.grass {
+  background-color: #86cf4e;
+}
+
+.fire {
+  background-color: #f0523e;
+}
+
+.water {
+  background-color: #52a7f5;
+}
+
+.fighting {
+  background-color: #9f543e;
+}
+
+.flying {
+  background-color: #719ef3;
+}
+
+.ground {
+  background-color: #e6c449;
+}
+
+.rock {
+  background-color: #c6b56e;
+}
+
+.bug {
+  background-color: #bbca1c;
+}
+
+.ghost {
+  background-color: #7670cf;
+}
+
+.psychic {
+  background-color: #eb64b0;
+}
+
+.ice {
+  background-color: #8fe8f4;
+}
+
+.dragon {
+  background-color: #8570f4;
+}
+
+.dark {
+  background-color: #886651;
+}
+
+.steel {
+  background-color: #bdbbd1;
+}
+
+.bottom-output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-output > table > tbody > tr > th {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5em 0;
+}
+
+.bottom-output > table > tbody > tr:not(:first-child) > th {
+  font-weight: normal;
+  border-top: 5px solid var(--white);
+}
+
+.bottom-output > table > tbody > tr > th:first-child {
+  border-right: 5px solid var(--white);
+}

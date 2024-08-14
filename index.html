@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokémon Search App</title>
+  </head>
+  <body>
+    <main>
+      <h1>RanFeb</h1>
+      <h1>Pokémon Search App</h1>
+      <div class="container">
+        <form>
+          <label for="search-input">Search for Pokémon Name or ID:</label>
+          <input type="text" id="search-input" required />
+          <button type="button" id="search-button">Search</button>
+        </form>
+        <div class="output">
+          <div class="top-output">
+            <div class="name-and-id">
+              <span id="pokemon-name"></span>
+              <span id="pokemon-id"></span>
+            </div>
+            <div class="size">
+              <span id="weight"></span>
+              <span id="height"></span>
+            </div>
+            <div class="image-container"></div>
+            <div id="types"></div>
+          </div>
+          <div class="bottom-output">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Base</th>
+                  <th>Stats</th>
+                </tr>
+                <tr>
+                  <th>HP:</th>
+                  <th id="hp"></th>
+                </tr>
+                <tr>
+                  <th>Attack:</th>
+                  <th id="attack"></th>
+                </tr>
+                <tr>
+                  <th>Defense:</th>
+                  <th id="defense"></th>
+                </tr>
+                <tr>
+                  <th>Sp. Attack:</th>
+                  <th id="special-attack"></th>
+                </tr>
+                <tr>
+                  <th>Sp. Defense:</th>
+                  <th id="special-defense"></th>
+                </tr>
+                <tr>
+                  <th>Speed:</th>
+                  <th id="speed"></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
