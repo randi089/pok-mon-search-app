@@ -49,19 +49,23 @@ function getPokemon(keyword) {
 }
 
 function updateUI(pokemon) {
-  pokemonName.innerText = pokemon.name;
-  pokemonId.innerText = "#" + pokemon.id;
-  height.innerText = `Height: ${pokemon.height}`;
-  weight.innerText = `Weight: ${pokemon.weight}`;
-  imgContainer.innerHTML = `<img src="${pokemon.sprites["front_default"]}" alt="${pokemon.name}" id="sprite"/>`;
-  types.innerHTML = "";
-  pokemon.types.forEach((type) => {
-    types.innerHTML += `<span class="${type.type.name}">${type.type.name}</span>`;
-  });
-  hp.innerText = pokemon.stats[0].base_stat;
-  attack.innerText = pokemon.stats[1].base_stat;
-  defense.innerText = pokemon.stats[2].base_stat;
-  specialAttack.innerText = pokemon.stats[3].base_stat;
-  specialDefense.innerText = pokemon.stats[4].base_stat;
-  speed.innerText = pokemon.stats[5].base_stat;
+  if (Object.hasOwn(pokemon, "count")) {
+    alert("Pokémon not found");
+  } else {
+    pokemonName.innerText = pokemon.name;
+    pokemonId.innerText = "#" + pokemon.id;
+    height.innerText = `Height: ${pokemon.height}`;
+    weight.innerText = `Weight: ${pokemon.weight}`;
+    imgContainer.innerHTML = `<img src="${pokemon.sprites["front_default"]}" alt="${pokemon.name}" id="sprite"/>`;
+    types.innerHTML = "";
+    pokemon.types.forEach((type) => {
+      types.innerHTML += `<span class="${type.type.name}">${type.type.name}</span>`;
+    });
+    hp.innerText = pokemon.stats[0].base_stat;
+    attack.innerText = pokemon.stats[1].base_stat;
+    defense.innerText = pokemon.stats[2].base_stat;
+    specialAttack.innerText = pokemon.stats[3].base_stat;
+    specialDefense.innerText = pokemon.stats[4].base_stat;
+    speed.innerText = pokemon.stats[5].base_stat;
+  }
 }
