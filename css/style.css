@@ -223,3 +223,9 @@ main > h1:first-child {
 .bottom-output > table > tbody > tr > th:first-child {
   border-right: 5px solid var(--white);
 }
+
+@media (max-width: 576px) {
+  #search-input {
+    margin-bottom: 1em;
+  }
+}
